@@ -34,7 +34,7 @@ namespace Razor_Example.Pages.BookList
                 return Page();
             }
 
-            _db.Books.Add(book);
+            _db.Books.Add(Book);
             await _db.SaveChangesAsync();
 
             return RedirectToPage("Index");
