@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>RazorExample</AssemblyName>
+    <RootNamespace>Jasarsoft.Razor.Example</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
