@@ -15,6 +15,9 @@ namespace Razor_Example.Pages.BookList
         private readonly ApplicationDbContext _db;
         public IEnumerable<Book> Books { get; set; }
 
+        [TempData]
+        public string Message { get; set; }
+
         public IndexModel(ApplicationDbContext db)
         {
             _db = db;

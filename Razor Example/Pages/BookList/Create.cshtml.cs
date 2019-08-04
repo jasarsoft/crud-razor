@@ -16,6 +16,8 @@ namespace Razor_Example.Pages.BookList
         [BindProperty]
         public Book Book { get; set; }
 
+        [TempData]
+        public string Message { get; set; }
 
         public CreateModel(ApplicationDbContext db)
         {
@@ -36,6 +38,7 @@ namespace Razor_Example.Pages.BookList
 
             _db.Books.Add(Book);
             await _db.SaveChangesAsync();
+            Message = "Book has been created successfully!";
 
             return RedirectToPage("Index");
         }
