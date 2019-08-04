@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Jasarsoft.Razor.Example.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,7 @@ namespace Razor.Example.Model
         {
 
         }
+
+        public DbSet<Book> Books { get; set; }
     }
 }
